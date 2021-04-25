@@ -1,0 +1,16 @@
+Let N be the size of the vector we are processing.
+N/2 is the number of times we are executing jb ..B1.4
+3N/2 is the total number of branches
+N/2 is the number of branch mispredictions
+N/2 is the number of branches not takes (ones in the vector)
+This is why PMC0/PMC1 = 3 and PMC0/PMC2 = 3
+
+rsi = N
+rax = N/2
+rdi is a pointer to the vector
+rdx is the loop counter
+xmm1 is constantly 1
+at ..L3, xmm2 is equal to the result variable
+at ..L4, xmm0 is equal to the result variable
+
+ecx and edx are set for apparently no reason

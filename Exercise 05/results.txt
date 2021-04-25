@@ -1,0 +1,2 @@
+MULSD on Ivy bridge: latency 5 cycles, throughput 1   cycles
+MULSD on Broadwell:  latency 3 cycles, throughput 0.5 cycles
